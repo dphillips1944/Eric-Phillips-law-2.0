@@ -7,10 +7,7 @@ async function includeHTML() {
       const res = await fetch(file);
       if (!res.ok) throw new Error(`Failed to load ${file} (${res.status})`);
       const text = await res.text();
-      // inject the partial
       el.insertAdjacentHTML('afterbegin', text);
-
-      // now wire up the toggle inside this injected partial
       const toggle = el.querySelector('.nav-toggle');
       const links  = el.querySelector('.nav-links');
       if (toggle && links) {
