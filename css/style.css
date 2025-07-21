@@ -118,8 +118,15 @@ header {
   justify-content: center;
   text-align: center;
 }
+.eric_hero{
+  max-width:50%;
+  width: auto;  /* or whatever fixed or responsive size you need */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px; /* optional styling */
+}
 
-.hero-content { padding: 2rem 1rem; }
+.hero-content { padding: 3rem 1rem; }
 
 .hero h2 { font-size: 2.5rem; }
 
