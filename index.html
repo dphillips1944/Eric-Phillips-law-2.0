@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric Phillips Law Office</title>
+  <link rel="icon" href="images/fav.png" sizes="32x32" type="image/png">
+
+  <!-- Your main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Swiper’s CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper/swiper-bundle.min.css"
+  />
+
+
+  <!-- Your site scripts -->
+  <script defer src="js/script.js"></script>
+  <script defer src="js/includes.js"></script>
+</head>
+
+
+<body>
+  <div data-include="header.html"></div>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <h2>Your Trusted Legal Partner</h2>
+    </section>
+
+    <!-- Areas of Practice Widget -->
+    <section id="areas-practice" class="container practice">
+      <h2>Areas Of Practice</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="//img1.wsimg.com/.../ERIC.jpg" alt="Criminal Defense">
+          <h3>Criminal Defense</h3>
+          <p>Quality and affordable criminal defense services in Sweetwater County.</p>
+        </div>
+        <!-- more cards -->
+      </div>
+    </section>
+
+    <!-- Reviews Widget via manual SwiperJS carousel -->
+    <section id="home-reviews" class="container reviews">
+      <h2>What Our Clients Say</h2>
+
+      <div id="reviews-carousel" class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <blockquote>
+              “Fantastic service from start to finish! Highly recommend.”
+            </blockquote>
+            <cite>— Jane Doe</cite>
+            <small>★ 5.0 / 5</small>
+          </div>
+          <!-- Slide 2 -->
+          <div class="swiper-slide">
+            <blockquote>
+              “They went above and beyond to help me. Will be back!”
+            </blockquote>
+            <cite>— John Smith</cite>
+            <small>★ 4.8 / 5</small>
+            <a 
+                href="https://goo.gl/maps/…YourPlaceID…" 
+                class="slide-link" 
+                target="_blank" 
+                rel="noopener"
+              >
+                Read all reviews
+              </a>
+          </div>
+          <!-- Add more .swiper-slide blocks for each review -->
+           <div class="reviews-link">
+  </div>
+        </div>
+
+        <!-- Pagination & navigation -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Contact Widget -->
+    <section id="contact-us" class="container contact-home">
+      <h2>Contact Us Today</h2>
+      <div class="contact-grid">
+        <iframe
+            width="1130"
+            height="450"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11229.271917091387!2d-109.2199463!3d41.5877313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875a60f1ca280399%3A0x6cd45e8cb3ce7dfc!2s531%20N%20Front%20St%2C%20Rock%20Springs%2C%20WY%2082901!5e0!3m2!1sen!2sus!4v1590000000000"
+          ></iframe>
+        <div class="contact-info">
+          <h3>Law Office of Eric F. Phillips</h3>
+          <p>531 N. Front Street<br>Rock Springs, WY 82901</p>
+          <p><a href="tel:3073820975">(307) 382-0975</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="footer.html"></div>
+
+  <!-- Swiper’s JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Swiper('#reviews-carousel', {
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      });
+    });
+  </script>
+</body>
+</html>
