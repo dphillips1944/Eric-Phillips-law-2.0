@@ -172,6 +172,7 @@ header {
    =================================== */
 .practice-grid {
   grid-template-columns: repeat(4, 1fr);
+  margin-top: 1rem;
 }
 
 .practice-box {
@@ -198,6 +199,10 @@ header {
   text-align: center;
 }
 
+#home-reviews h2{
+  padding: 1rem;
+}
+
 #reviews-carousel { max-width: 600px; margin: 0 auto; padding-bottom: 3rem; position: relative; overflow: hidden; }
 
 #reviews-carousel .swiper-wrapper { display: flex; }
@@ -206,8 +211,8 @@ header {
   flex: 0 0 100%;
   background-color: var(--primary-color);
   color: var(--background-color);
-  border-radius: 8px;
-  padding: 1.5rem;
+  border-radius: 10px;
+  padding: 2rem;
   height: 250px;
   box-sizing: border-box;
   overflow-y: auto;
@@ -215,12 +220,16 @@ header {
 
 .slide-link { margin-top: 1rem; display: inline-block; }
 
-.reviews-link { position: absolute; bottom: 1rem; width: 100%; text-align: center; }
+.reviews-link { 
+    position: static;    /* default flow */
+    margin-top: 1.5rem;  /* space above the button */
+    text-align: center;
+    width: 100%; }
 
 .btn-review {
   background-color: var(--primary-color);
   color: var(--background-color);
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 2rem;
   border-radius: 4px;
   font-weight: 600;
 }

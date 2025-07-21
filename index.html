@@ -50,28 +50,37 @@
 
     <!-- Reviews Widget via SwiperJS carousel -->
     <section id="home-reviews" class="container reviews">
-      <h2>What Our Clients Say</h2>
-      <div id="reviews-carousel" class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <blockquote>“Fantastic service from start to finish! Highly recommend.”</blockquote>
-            <cite>— Jane Doe</cite>
-            <small>★ 5.0 / 5</small>
-          </div>
-          <div class="swiper-slide">
-            <blockquote>“They went above and beyond to help me. Will be back!”</blockquote>
-            <cite>— John Smith</cite>
-            <small>★ 4.8 / 5</small>
-          </div>
-        </div>
-        <div class="reviews-link">
-          <a href="https://www.google.com/search?sca_esv=0584e342056e488a&sxsrf=AE3TifP9mE44mKaofptJhbUF9yAhylmLzQ:1753115855641&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s4_jetZWdnfZ1Ag2eiNrXeBrhtJLFw0pm3hHvaHO6kIy027Yis71uJi3v49Jx0t7tMybc0vsL8tZGbJAw1kzd3aYE6VsQao9muRugPbIpr7ZiTzGLg%3D%3D&q=Eric+Phillips+Law+Office+Reviews&sa=X&ved=2ahUKEwiZlM2-sc6OAxX2BDQIHYlVLsgQ0bkNegQIIRAE&biw=1920&bih=1031&dpr=1" class="btn btn-review">Read All Reviews</a>
-        </div>
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+  <h2>What Our Clients Say</h2>
+
+  <!-- keep your carousel here -->
+  <div id="reviews-carousel" class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <blockquote>“Fantastic service from start to finish! Highly recommend.”</blockquote>
+        <cite>— Jane Doe</cite>
+        <small>★ 5.0 / 5</small>
       </div>
-    </section>
+      <div class="swiper-slide">
+        <blockquote>“They went above and beyond to help me. Will be back!”</blockquote>
+        <cite>— John Smith</cite>
+        <small>★ 4.8 / 5</small>
+      </div>
+    </div>
+
+    <!-- pagination & nav -->
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- now the button sits in the normal flow -->
+  <div class="reviews-link">
+    <a href="https://www.google.com/...your-review-link..." class="btn btn-review">
+      Read All Reviews
+    </a>
+  </div>
+</section>
+
 
     <!-- Contact Widget -->
     <section id="contact-us" class="container contact-home">
