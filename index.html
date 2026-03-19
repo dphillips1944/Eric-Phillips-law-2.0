@@ -3,112 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eric Phillips Law Office</title>
+  <title>Eric F. Phillips & Associates | Rock Springs, WY</title>
   <link rel="icon" href="images/fav.png" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
   <script defer src="js/includes.js"></script>
   <script defer src="js/script.js"></script>
 </head>
 <body>
   <div data-include="header.html"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Experienced Wyoming Representation When the Stakes Are High</h2>
+      <p>
+        Criminal defense, family law, bankruptcy, protection orders, and estate planning.
+      </p>
+
+      <img src="images/Eric pic.jpg" alt="Eric Phillips" class="eric_hero">
+
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-primary">Schedule a Consultation</a>
+        <a href="tel:3073820975" class="btn btn-outline">Call (307) 382-0975</a>
+      </div>
+    </div>
+  </section>
+
   <main>
-    <!-- Hero -->
-    <section class="hero">
-      <div class="hero-content">
-        <h2>Experienced Wyoming Representation When the Stakes Are High</h2>
-        <p>Criminal defense, family law, bankruptcy, protection orders, and wills & trusts.</p>
-        <img src="images/eric_hero.jpg" alt="pic-eric" class="eric_hero">
-        <div class="hero-ctas">
-          <a href="tel:3073820975" class="btn btn-primary">Call Now</a>
-          <a href="#contact-form" class="btn btn-outline">Contact Us</a>
+    <!-- Practice Areas -->
+    <section class="container">
+      <h2>Practice Areas</h2>
+      <div class="grid practice-grid">
+        <div class="practice-box">
+          <h3>Criminal Law</h3>
+          <p>
+            Strategic criminal defense backed by prosecutor-side experience and courtroom readiness.
+          </p>
+        </div>
+
+        <div class="practice-box">
+          <h3>Family Law</h3>
+          <p>
+            Divorce, custody, support, and related matters handled with strength and care.
+          </p>
+        </div>
+
+        <div class="practice-box">
+          <h3>Bankruptcy</h3>
+          <p>
+            Guidance through Chapter 7 and Chapter 13 to help you regain financial stability.
+          </p>
+        </div>
+
+        <div class="practice-box">
+          <h3>Protection Orders</h3>
+          <p>
+            Representation in stalking and protection order matters on both sides of the case.
+          </p>
+        </div>
+
+        <div class="practice-box">
+          <h3>Wills & Trusts</h3>
+          <p>
+            Estate planning services to protect your wishes, your assets, and your family.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- Areas of Practice Widget -->
-    <section id="areas-practice" class="container practice">
-      <h2>Areas Of Practice</h2>
-      <div class="grid practice-grid">
-      <div class="practice-box">
-        <h3>Criminal Law</h3>
-        <p>Experienced criminal defense backed by former prosecutor insight and strong courtroom advocacy.</p>
-      </div>
-      <div class="practice-box">
-        <h3>Family Law</h3>
-        <p>Guidance in divorce, custody, support, and related family matters with care and determination.</p>
-      </div>
-      <div class="practice-box">
-        <h3>Bankruptcy</h3>
-        <p>Clear advice for Chapter 7 and Chapter 13 options when financial pressure becomes overwhelming.</p>
-      </div>
-      <div class="practice-box">
-        <h3>Wills & Trusts</h3>
-        <p>Estate planning services to help protect your assets, your wishes, and the people you love.</p>
-      </div>
-    </div>
-        </section>
+    <!-- Reviews Section -->
+    <section id="home-reviews" class="container">
+      <h2>Client Reviews</h2>
 
-    <!-- Reviews Widget via SwiperJS carousel -->
-    <section id="home-reviews" class="container reviews">
-  <h2>What Our Clients Say</h2>
+      <div id="reviews-carousel" class="swiper">
+        <div class="swiper-wrapper">
 
-  <!-- keep your carousel here -->
-  <div id="reviews-carousel" class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <blockquote>“Fantastic service from start to finish! Highly recommend.”</blockquote>
-        <cite>— Jane Doe</cite>
-        <small>★ 5.0 / 5</small>
+          <div class="swiper-slide">
+            <blockquote>
+              "Eric took the time to explain everything clearly and made a stressful situation much easier to handle."
+            </blockquote>
+            <cite>- Former Client</cite>
+          </div>
+
+          <div class="swiper-slide">
+            <blockquote>
+              "Professional, responsive, and genuinely cared about my case. I would highly recommend this firm."
+            </blockquote>
+            <cite>- Client Review</cite>
+          </div>
+
+          <div class="swiper-slide">
+            <blockquote>
+              "They helped me through a difficult time and were always available when I needed answers."
+            </blockquote>
+            <cite>- Client</cite>
+          </div>
+
+        </div>
+
+        <!-- Pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <div class="swiper-slide">
-        <blockquote>“They went above and beyond to help me. Will be back!”</blockquote>
-        <cite>— John Smith</cite>
-        <small>★ 4.8 / 5</small>
+
+      <div class="reviews-link">
+        <a href="https://www.google.com" target="_blank" class="btn btn-review">
+          Read More Reviews
+        </a>
       </div>
-    </div>
+    </section>
 
-    <!-- pagination & nav -->
-    <div class="swiper-pagination"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
-  </div>
+    <!-- Contact Preview Section -->
+    <section class="container">
+      <h2>Contact Our Office</h2>
 
-  <!-- now the button sits in the normal flow -->
-  <div class="reviews-link">
-    <a href="https://www.google.com/search?sca_esv=d4acbba8fa1ce30c&sxsrf=AE3TifMZ_TMbtmRSOMJw9cupURk8opwnqg:1753124548591&si=AMgyJEuzsz2NflaaWzrzdpjxXXRaJ2hfdMsbe_mSWso6src8s4_jetZWdnfZ1Ag2eiNrXeBrhtJLFw0pm3hHvaHO6kIy027Yis71uJi3v49Jx0t7tMybc0vsL8tZGbJAw1kzd3aYE6VsQao9muRugPbIpr7ZiTzGLg%3D%3D&q=Eric+Phillips+Law+Office+Reviews&sa=X&ved=2ahUKEwir5Nzv0c6OAxU1IjQIHYY_NR4Q0bkNegQILRAE&biw=1920&bih=1031&dpr=1" class="btn btn-review">
-      Read All Reviews
-    </a>
-  </div>
-</section>
-
-
-    <!-- Contact Widget -->
-    <section id="contact-us" class="container contact-home">
-      <h2>Contact Us Today</h2>
-      <!-- Embedded Google Form -->
-      <div id="contact-form" class="form-embed">
-        <iframe src="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
       <div class="contact-grid">
-        <iframe
-          width="100%"
-          height="450"
-          style="border:0;"
-          loading="lazy"
-          allowfullscreen
-          referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11229.271917091387!2d-109.2199463!3d41.5877313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875a60f1ca280399%3A0x6cd45e8cb3ce7dfc!2s531%20N%20Front%20St%2C%20Rock%20Springs%2C%20WY%2082901!5e0!3m2!1sen!2sus!4v1590000000000"
-        ></iframe>
         <div class="contact-info">
-          <h3>Law Office of Eric F. Phillips</h3>
-          <p>531 N. Front Street<br>Rock Springs, WY 82901</p>
-          <p><a href="tel:3073820975">(307) 382-0975</a></p>
+          <h3>Eric F. Phillips & Associates</h3>
+
+          <p>
+            531 N. Front Street<br>
+            Rock Springs, WY 82901
+          </p>
+
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:3073820975">(307) 382-0975</a>
+          </p>
+
+          <p>
+            Criminal law consultations are free. Family law consultations with Beth are $100.
+          </p>
+
+          <p style="margin-top: 1rem;">
+            <a href="contact.html" class="btn btn-primary">Send a Message</a>
+          </p>
+        </div>
+
+        <div>
+          <iframe
+            src="https://www.google.com/maps?q=531+N+Front+Street,+Rock+Springs,+WY+82901&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+          </iframe>
         </div>
       </div>
+    </section>
+
+    <!-- STRONG CTA SECTION -->
+    <section class="container" style="text-align:center;">
+      <h2>Talk to an Attorney Today</h2>
+      <p>
+        If you are dealing with a legal issue, the next step is a conversation.
+      </p>
+
+      <p style="margin-top: 1rem;">
+        <a href="contact.html" class="btn btn-primary">Contact the Office</a>
+        <a href="tel:3073820975" class="btn btn-outline" style="margin-left: 0.75rem;">
+          Call Now
+        </a>
+      </p>
     </section>
   </main>
+
   <div data-include="footer.html"></div>
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 </html>
