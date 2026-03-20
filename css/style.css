@@ -14,8 +14,8 @@
   --radius: 10px;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
   --transition: 0.25s ease;
-  --border-width: 2px;
-  --button-height: 50px;
+  --border-width: 3px;
+  --button-height: 54px;
   --button-padding-x: 1.5rem;
 }
 
