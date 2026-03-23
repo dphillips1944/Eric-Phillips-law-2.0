@@ -6,11 +6,28 @@
   <title>Practice Areas | Eric F. Phillips & Associates</title>
   <link rel="icon" href="images/fav.png" sizes="32x32" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/includes.js"></script>
   <script defer src="js/script.js"></script>
 </head>
 <body>
-  <div data-include="header.html"></div>
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <a href="index.html" class="brand" aria-label="Eric Phillips Law Office home">
+        <img src="images/logobottom.png" alt="Eric Phillips Law Office logo" class="logo">
+        <span class="header-text-real">Eric F. Phillips &amp; Associates</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" type="button">
+        &#9776;
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Practice Areas</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
 
   <section class="hero page-hero">
     <div class="hero-content">
@@ -93,6 +110,35 @@
     </section>
   </main>
 
-  <div data-include="footer.html"></div>
+    <footer class="site-footer">
+  <div class="container footer-grid">
+
+    <div class="footer-brand">
+      <h3>Phillips Law LLC</h3>
+      <p>Trusted legal counsel in Wyoming. Focused on results, relationships, and long-term solutions.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Practice Areas</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Rock Springs, Wyoming</p>
+      <p><a href="tel:+13073820975">(307) 382-0975</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2026 Phillips Law LLC. All rights reserved.</p>
+  </div>
+</footer>
 </body>
 </html>
