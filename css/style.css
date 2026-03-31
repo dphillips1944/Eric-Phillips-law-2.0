@@ -330,11 +330,15 @@ main .btn-outline:focus-visible {
 
 /* Practice areas */
 .practice-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   margin-top: 1.5rem;
+  align-items: stretch;
 }
 
 .practice-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 1.5rem;
   border-top: 5px solid var(--accent-color);
   transition: transform var(--transition), box-shadow var(--transition);
@@ -347,6 +351,17 @@ main .btn-outline:focus-visible {
 .practice-box p {
   font-size: 1rem;
   color: var(--muted-text);
+}
+
+.practice-box .page-image {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.practice-box h3 {
+  margin-top: 0;
 }
 
 /* Reviews */
