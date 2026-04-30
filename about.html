@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Eric F. Phillips & Associates</title>
-  <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/png">
+  <link rel="icon" href="images/favicon.ico" sizes="32x32" type="image/x-icon">
   <link rel="stylesheet" href="css/style.css">
   <script defer src="js/script.js"></script>
 </head>
@@ -32,38 +32,57 @@
 
   <section class="hero page-hero">
     <div class="hero-content">
-      <h2>About Our Firm</h2>
+      <h1>About Our Firm</h1>
       <p>Trusted legal counsel in Wyoming with an emphasis on experience, compassion, and practical results.</p>
     </div>
   </section>
 
   <main>
-    <section class="container">
-      <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
-        <div>
-          <img src="images/Eric and Beth.jpg" alt="Eric Phillips and Beth Lempp-Fields" class="team-image">
-        </div>
-        <div>
-          <h2>Who We Are</h2>
-          <p>
-            At Eric F. Phillips &amp; Associates, we understand that facing legal challenges can be overwhelming and deeply personal.
-            Whether you are dealing with criminal defense, family law, bankruptcy, stalking and protection orders, or wills and trusts,
-            our team is here to support you every step of the way.
-          </p>
-          <p>
-            We take the time to listen, understand your situation, and guide you toward the best possible outcome.
-          </p>
+    <section class="container about-story">
+      <div class="about-story-image">
+        <img src="images/Eric and Beth.jpg" alt="Eric Phillips and Beth Lempp-Fields" class="team-image">
+      </div>
+      <div class="about-story-copy">
+        <p class="section-kicker">Who We Are</p>
+        <h2>A Wyoming firm built for real-life legal problems.</h2>
+        <p>
+          At Eric F. Phillips &amp; Associates, we understand that facing legal challenges can be overwhelming and deeply personal.
+          Whether you are dealing with criminal defense, family law, bankruptcy, stalking and protection orders, or wills and trusts,
+          our team is here to support you every step of the way.
+        </p>
+        <p>
+          We take the time to listen, understand your situation, and guide you toward the best possible outcome.
+        </p>
+        <div class="about-stats" aria-label="Firm highlights">
+          <div>
+            <strong>2004</strong>
+            <span>Eric began practicing law</span>
+          </div>
+          <div>
+            <strong>2019</strong>
+            <span>Beth began practicing law</span>
+          </div>
+          <div>
+            <strong>5</strong>
+            <span>Core practice areas</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="container">
-      <h2>Meet Eric F. Phillips</h2>
-      <div class="grid" style="grid-template-columns: 1fr 2fr; align-items: start;">
+    <section class="container attorney-section">
+      <div class="section-heading-row">
         <div>
-          <img src="images/Eric pic.jpg" alt="Eric F. Phillips" class="bio-image">
+          <p class="section-kicker">Attorneys</p>
+          <h2>Different strengths. One client-focused approach.</h2>
         </div>
+      </div>
+
+      <article class="attorney-card">
+        <img src="images/Eric pic.jpg" alt="Eric F. Phillips" class="bio-image">
         <div>
+          <p class="section-kicker">Criminal Defense, Bankruptcy, Estate Planning</p>
+          <h3>Eric F. Phillips</h3>
           <p>
             Eric F. Phillips has been practicing law since 2004 and has represented clients through some of the most difficult
             moments of their lives. Born and raised in Wyoming, Eric is deeply connected to the community he serves and earned his
@@ -74,20 +93,16 @@
             perspective and a deep understanding of how to guide clients through the legal system with care and clarity.
           </p>
           <p>
-            Eric is known for being approachable, compassionate, and easy to talk to. He takes pride in helping clients feel at ease
-            during stressful and uncertain times while remaining focused on the best possible outcome.
+            Eric is known for being approachable, compassionate, and easy to talk to while remaining focused on the best possible outcome.
           </p>
         </div>
-      </div>
-    </section>
+      </article>
 
-    <section class="container">
-      <h2>Meet Elizabeth "Beth" Lempp-Fields</h2>
-      <div class="grid" style="grid-template-columns: 1fr 2fr; align-items: start;">
+      <article class="attorney-card attorney-card-reverse">
+        <img src="images/Beth.jpg" alt="Elizabeth Lempp-Fields" class="bio-image">
         <div>
-          <img src="images/Beth.jpg" alt="Elizabeth Lempp-Fields" class="bio-image">
-        </div>
-        <div>
+          <p class="section-kicker">Family Law</p>
+          <h3>Elizabeth "Beth" Lempp-Fields</h3>
           <p>
             Beth has been practicing law since 2019 and focuses almost exclusively on family law, including divorce and child custody.
             She is a graduate of the University of Wyoming College of Law and has dedicated her practice to helping clients through
@@ -102,11 +117,14 @@
             them move toward stability.
           </p>
         </div>
-      </div>
+      </article>
     </section>
 
-    <section class="container">
-      <h2>Support Staff</h2>
+    <section class="container support-callout">
+      <div>
+        <p class="section-kicker">Behind The Scenes</p>
+        <h2>Prepared, responsive, and team-driven.</h2>
+      </div>
       <p>
         Our team also includes Chloe Love, a graduating third-year law student who assists with legal research and trial preparation,
         as well as paralegal Brandy Lewis and legal assistants Aimei Chiu and Annette Eychner.
@@ -115,35 +133,48 @@
         We believe clients deserve responsive communication, careful preparation, and a team that genuinely cares about the outcome.
       </p>
     </section>
-    
-    <section class="container">
-      <h2>Why Clients Choose Our Firm</h2>
-      <div class="grid practice-grid">
-        <div class="practice-box">
+
+    <section class="container values-section">
+      <div class="section-heading-row">
+        <div>
+          <p class="section-kicker">Why Clients Choose Our Firm</p>
+          <h2>Steady guidance from the first conversation forward.</h2>
+        </div>
+      </div>
+      <div class="grid values-grid">
+        <div class="value-card">
+          <span>01</span>
           <h3>Experience</h3>
           <p>More than two decades of legal practice and substantial courtroom experience.</p>
         </div>
-        <div class="practice-box">
+        <div class="value-card">
+          <span>02</span>
           <h3>Personal Attention</h3>
           <p>We take time to listen, explain your options clearly, and help you move forward.</p>
         </div>
-        <div class="practice-box">
+        <div class="value-card">
+          <span>03</span>
           <h3>Wyoming Roots</h3>
           <p>Deep community ties and practical insight into the local legal landscape.</p>
         </div>
-        <div class="practice-box">
+        <div class="value-card">
+          <span>04</span>
           <h3>Real Advocacy</h3>
           <p>Thoughtful negotiation when possible and strong litigation when necessary.</p>
         </div>
       </div>
     </section>
-    
-    <section class="container">
-      <h2>Our Office</h2>
+
+    <section class="container office-feature">
       <img src="images/building image.jpg" alt="Office building in Rock Springs" class="page-image">
-      <p>
-        Our office is located in Rock Springs and serves clients with practical legal counsel and strong advocacy across a range of matters.
-      </p>
+      <div>
+        <p class="section-kicker">Our Office</p>
+        <h2>Local counsel in Rock Springs.</h2>
+        <p>
+          Our office is located in Rock Springs and serves clients with practical legal counsel and strong advocacy across a range of matters.
+        </p>
+        <a href="contact.html" class="btn btn-primary">Contact the Office</a>
+      </div>
     </section>
   </main>
 
