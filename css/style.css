@@ -296,7 +296,7 @@ main .btn-outline:focus-visible {
 
 /* Hero */
 .hero {
-  padding: 5rem 0;
+  padding: 1.75rem 0 5rem;
   color: #ffffff;
   background:
     linear-gradient(rgba(17, 17, 17, 0.72), rgba(17, 17, 17, 0.72)),
@@ -327,8 +327,9 @@ main .btn-outline:focus-visible {
 .eric_hero {
   width: 100%;
   max-width: none;
-  max-height: 620px;
-  object-fit: contain;
+  height: clamp(390px, 48vw, 600px);
+  object-fit: cover;
+  object-position: center top;
   background: var(--primary-color);
   border: var(--border-width) solid rgba(255, 255, 255, 0.15);
   border-radius: 12px;
@@ -349,8 +350,7 @@ main .btn-outline:focus-visible {
 @media (min-width: 769px) {
   .eric_hero {
     width: min(100%, 1120px);
-    height: auto;
-    max-height: none;
+    height: clamp(540px, 47vw, 635px);
   }
 }
 
@@ -807,6 +807,7 @@ main .btn-outline:focus-visible {
   max-width: 760px;
   margin: 1.5rem auto 0;
   overflow: hidden;
+  padding: 0 3.25rem 2.5rem;
 }
 
 #reviews-carousel .swiper-slide {
@@ -828,6 +829,39 @@ main .btn-outline:focus-visible {
 #reviews-carousel small {
   font-size: 0.98rem;
   color: var(--muted-text);
+}
+
+#reviews-carousel .swiper-button-prev,
+#reviews-carousel .swiper-button-next {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.16);
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 50%;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+#reviews-carousel .swiper-button-prev::after,
+#reviews-carousel .swiper-button-next::after {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#reviews-carousel .swiper-button-prev:hover,
+#reviews-carousel .swiper-button-next:hover {
+  color: var(--primary-color);
+  background: #ffffff;
+  transform: translateY(-1px);
+}
+
+#reviews-carousel .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.8);
+  opacity: 1;
+}
+
+#reviews-carousel .swiper-pagination-bullet-active {
+  background: #ffffff;
 }
 
 .reviews-link {
@@ -1052,7 +1086,7 @@ select:focus-visible {
   }
 
   .hero {
-    padding: 3rem 0;
+    padding: 0.75rem 0 3rem;
   }
 
   .page-hero {
@@ -1117,6 +1151,15 @@ select:focus-visible {
   #reviews-carousel .swiper-slide {
     min-height: 190px;
   }
+
+  #reviews-carousel {
+    padding: 0 0 2.25rem;
+  }
+
+  #reviews-carousel .swiper-button-prev,
+  #reviews-carousel .swiper-button-next {
+    display: none;
+  }
 }
 
 @media (max-width: 540px) {
@@ -1180,7 +1223,9 @@ select:focus-visible {
   }
 
   .eric_hero {
-    max-height: 360px;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
     border-radius: 8px;
   }
 

@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (typeof Swiper !== "undefined" && document.querySelector("#reviews-carousel")) {
     new Swiper("#reviews-carousel", {
       loop: true,
+      slidesPerView: 1,
+      spaceBetween: 24,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false
